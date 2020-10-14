@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AddPost</title>
+</head>
+<body>
+      {% for x in Data %}
+        <h4>{{ q.pub_date }}<a href="/pages/{{ q.id }}">{{ q.question_text }}</a></h4>
+        <h1>{{ x.title }}</h1>
+        <h1>{{ x.body }}</h1>
+        <h1>{{ x.date }}</h1>
+     {% endfor %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <span>Hello, {{request.user}}</span>
+     <h1>{{user.username}}</h1>
+     <h1>{{user.id}}</h1>
+     <h4><a href="/pages/{{ user.id }}">Your profile</a></h4>
+     <span><a href="{% url 'logout' %}">Logout</a></span>
+     <br>
+     <span><a href="{% url 'addpost' %}">Add Post</a></span>
+
+     {% for x in Data %}
+        <h1>{{ x.title }}</h1>
+        <h1>{{ x.body }}</h1>
+        <h1>{{ x.date }}</h1>
+     {% endfor %}
+</body>
+</html>

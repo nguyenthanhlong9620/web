@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AddPost</title>
+</head>
+<body>
+      `<center>
+          <form action="." method="POST">
+              {% csrf_token %}
+              {{form}}
+              <input type="submit" value="Add">
+          </form>
+      </center>`
+</body>
+</html>
